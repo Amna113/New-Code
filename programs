@@ -1,0 +1,695 @@
+					1
+
+#include <iostream>
+using namespace std;
+class summution
+{
+	int a,b;
+	public:
+		void in()
+		{
+			cout<<"ENTER 1ST NUMBER: ";
+			cin>>a;
+			cout<<"ENTER 2ND NUMBER: ";
+			cin>>b;
+		}
+		int sum()
+		{
+			int sum;
+			sum=a+b;
+			return sum;
+		}
+};
+int main()
+{
+	summution s;
+	s.in();
+	s.sum();
+	cout<<"SUM OF NUMBERS IS: "<<s.sum()<<endl;
+}
+..................................................................................................................................................................................................................
+					2	
+      				
+#include <iostream>
+using namespace std;
+class product
+{
+	int a,b;
+	public:
+		void in()
+		{
+			cout<<"ENTER 1ST NUMBER: ";
+			cin>>a;
+			cout<<"ENTER 2ND NUMBER: ";
+			cin>>b;
+		}
+		int p()
+		{
+			int pro;
+			pro=a*b;
+			return pro;
+		}
+};
+int main()
+{
+	product s;
+	s.in();
+	s.p();
+	cout<<"SUM OF NUMBERS IS: "<<s.p()<<endl;
+}
+........................................................................................................................................................................................................................
+					3
+
+#include <iostream>
+using namespace std;
+class circle
+{
+	private:
+		float rad;
+		public:
+			void in()
+			{
+				cout<<"ENTER RADIUS: ";
+				cin>>rad;
+			}
+			float circum()
+			{
+				float circ;
+				circ=2*3.14*rad;
+				return circ;
+			}
+};
+int main()
+{
+circle c;
+c.in();
+c.circum();
+cout<<"CIRCUMFERENCE OF CIRCLE IS: "<<c.circum()<<endl;
+}
+....................................................................................................................................................................................................................
+					4
+
+#include <iostream>
+using namespace std;
+class circle
+{
+	private:
+		float rad;
+		public:
+			void in()
+			{
+				cout<<"ENTER RADIUS: ";
+				cin>>rad;
+			}
+			float area()
+			{
+				float ar;
+				ar=rad*3.14*rad;
+				return ar;
+			}
+};
+int main()
+{
+circle c;
+c.in();
+c.area();
+cout<<"CIRCUMFERENCE OF CIRCLE IS: "<<c.area()<<endl;
+}
+......................................................................................................................................................................................................................
+  					5
+
+#include <iostream>
+using namespace std;
+class maximum
+{
+	private:
+		int num[3];
+	public:
+	void in()
+	{
+		cout<<"ENTER THREE NUMBERS:"<<endl;
+		for(int i=0;i<3;i++)
+		{
+			cin>>num[i];
+		}
+	}
+	int max()
+	{
+		for(int i=0;i<3;i++)
+		{
+			int max=num[0];//max=1
+			if(num[0]<num[1])//1 2 3
+			{
+				max=num[1];
+				if(num[1]<num[2])
+				max=num[2];
+			}
+			else if(num[0]<num[2])
+			max=num[2];
+			return max;
+		}
+	}	
+};
+int main()
+{
+	maximum m;
+	m.in();
+	m.max();
+	cout<<"MAXIMUM NUMBER IS: "<<m.max()<<endl;
+}
+.....................................................................................................................................................................................................................
+					6
+
+#include <iostream>
+using namespace std;
+class miniumum
+{
+	private:
+		int num[3];
+	public:
+	void in()
+	{
+		cout<<"ENTER THREE NUMBERS:"<<endl;
+		for(int i=0;i<3;i++)
+		{
+			cin>>num[i];
+		}
+	}
+	int min()
+	{
+		for(int i=0;i<3;i++)
+		{
+			int min=num[0];
+			if(num[0]>num[1])
+			{
+				min=num[1];
+				if(num[1]>num[2])
+				min=num[2];
+			}
+			else if(num[0]>num[2])
+			min=num[2];
+			return min;
+		}
+	}	
+};
+int main()
+{
+	miniumum m;
+	m.in();
+	m.min();
+	cout<<"MINIMUM NUMBER IS: "<<m.min()<<endl;
+}
+.......................................................................................................................................................................................................................
+					7
+
+#include <iostream>
+using namespace std;
+class number
+{
+	int a;
+	public:
+		void in()
+		{
+			cout<<"ENTER A NUMBER: ";
+			cin>>a;
+		}
+		void check()
+		{
+			if(a%2==0)
+			{
+				cout<<"NUMBER IS EVEN."<<endl;
+			}
+			else
+			cout<<"NUMBER IS ODD."<<endl;
+		}
+};
+int main()
+{
+	number c;
+	c.in();
+	c.check();
+}
+....................................................................................................................................................................................................................
+					8
+
+#include <iostream>
+using namespace std;
+class vote
+{
+	private:
+	int age;
+	public:
+		void in()
+		{
+			cout<<"ENTER YOUR AGE: ";
+			cin>>age;
+		}
+		void check()
+		{
+			if(age>=18)
+			{
+				cout<<"YOU ARE EILIGIBLE TO VOTE:)"<<endl;
+			}
+			else
+			cout<<"YOU ARE NOT EILIGIBLE TO VAOTE:("<<endl;
+		}
+};
+int main()
+{
+	vote v;
+	v.in();
+	v.check();
+}
+......................................................................................................................................................................................................................
+					14
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a,b;
+	int temp;
+	cout<<"ENTER 1ST NUMBER: ";
+	cin>>a;
+	cout<<"ENTER 2ND NUMBER: ";
+	cin>>b;
+	temp=a;
+	a=b;
+	b=temp;
+	cout<<"     AFTER SWAPPING:"<<endl;
+	cout<<"1ST NUMBER IS: "<<a<<endl;
+	cout<<"2ND NUMBER IS: "<<b<<endl;
+}
+.......................................................................................................................................................................................................................
+					15
+
+#include <iostream>
+using namespace std;
+class sphere
+{
+	float rad;
+	public:
+		void in()
+		{
+			cout<<"ENTER RADIUS: ";
+			cin>>rad;
+		}
+		void volume()
+		{
+			float vol;
+			vol=(4*3.14*rad*rad)/3;
+			cout<<"VOLUME OF SPHERE: "<<vol<<endl;
+		}
+};
+int main()
+{
+	sphere s;
+	s.in();
+	s.volume();
+}
+...............................................................................................................................................................................................................
+					16
+
+#include <iostream>
+using namespace std;
+class cuboid
+{
+	public:
+		void volume(int len,int wid,int hig)
+		{
+			int vol;
+			vol=len*wid*hig;
+			cout<<"VOLUME OF CUBOID IS: "<<vol<<endl;
+		}
+};
+int main()
+{
+	int l,w,h;
+	cuboid c;
+   cout<<"ENTER LENGTH OF CUBOID: ";
+	cin>>l;
+	cout<<"ENTER WIDTH OF CUBOID: ";
+	cin>>w;
+	cout<<"ENTER HIGHT OF CUBOID: ";
+	cin>>h;
+	c.volume(l,w,h);	
+}
+..................................................................................................................................................................................................................
+					17
+
+#include <iostream>
+using namespace std;
+class cylinder
+{
+	int rad,hig;
+	public:
+		void in()
+		{
+			cout<<"ENTER RADIUS: ";
+			cin>>rad;
+			cout<<"ENTER HIGHT: ";
+			cin>>hig;
+		}
+		void volume()
+		{
+			float vol;
+			vol=rad*hig*3.14;
+			cout<<"VOLUME OF CYLINDER IS: "<<vol<<endl;
+		}
+};
+int main()
+{
+	cylinder c;
+	c.in();
+	c.volume();
+}
+.........................................................................................................................................................................................................................
+					18
+
+#include <iostream>
+using namespace std;
+class rectangle
+{
+	int l,w;
+	int a,para;
+	public:
+	void in()
+	{
+		cout<<"ENTER LENGTH: ";
+		cin>>l;
+		cout<<"ENTER WIDTH: ";
+		cin>>w;
+	}
+	void area()
+	{
+		a=l*w;
+		cout<<"AREA OF RECTANGLE: "<<a<<endl;
+	}
+	void parameter()
+	{
+		para=2*(l*w);
+		cout<<"PARAMETER OF RECTANGLE: "<<para<<endl;
+	}
+};
+int main()
+{
+	rectangle r;
+	r.in();
+	r.area();
+	r.parameter();
+}
+.....................................................................................................................................................................................................................
+					9
+
+#include <iostream>
+using namespace std;
+class number
+{
+	int a;
+	int temp=0;
+	public:
+		void in()
+		{
+			cout<<"ENTER A NUMBER: ";
+			cin>>a;
+		}
+		void check()
+	{
+		for(int i=1;i<=a;i++)
+		{
+			if(a%2==0)
+		{
+			temp++;
+		}
+		}
+		if(temp==2)
+		{
+			cout<<"NUMBER IS PRIME."<<endl;
+		}
+		else
+		cout<<"NUMBER IS NOT PRIME."<<endl;
+	}
+};
+int main()
+{
+	number n;
+	n.in();
+	n.check();
+	return 0;
+}
+.........................................................................................................................................................................................................................
+					10
+
+#include <iostream>
+using namespace std;
+class result
+{
+	private:
+		int marks;
+	public:
+		void in()
+		{
+			cout<<"ENTER MARKS:";
+			cin>>marks;
+		}
+		void grade()
+		{
+			if(marks>=91&&marks<=100)
+			{
+				cout<<"YOUR GRADE IS AA"<<endl;
+			}
+			else if(marks>=81&&marks<=90)
+			{
+				cout<<"YOUR GRADE IS AB"<<endl;
+			}
+				else if(marks>=71&&marks<=80)
+			{
+				cout<<"YOUR GRADE IS BB"<<endl;
+			}
+				else if(marks>=61&&marks<=70)
+			{
+				cout<<"YOUR GRADE IS BC"<<endl;
+			}
+				else if(marks>=51&&marks<=60)
+			{
+				cout<<"YOUR GRADE IS CD"<<endl;
+			}
+				else if(marks>=41&&marks<=50)
+			{
+				cout<<"YOUR GRADE IS DD"<<endl;
+			}
+			else 
+			cout<<"FALI"<<endl;
+		}	
+};
+int main()
+{
+	result r;
+	r.in();
+	r.grade();
+}
+......................................................................................................................................................................................................................
+					11
+
+#include <iostream>
+using namespace std;
+class factorial
+{
+	int n,fact=1;
+	public:
+		void in()
+		{
+			cout<<"ENTER NUMBER: "<<endl;
+			cin>>n;
+		}
+		void sol()
+		{
+			for(int i=1;i<=n;i++)
+			{
+				fact=fact*i;
+			}
+			cout<<"FACTORIAL OF NUMBER IS: "<<fact<<endl;
+		}
+};
+int main()
+{
+	factorial f;
+	f.in();
+	f.sol();
+}
+..................................................................................................................................................................................................................
+					28
+
+#include <iostream>  
+using namespace std;  
+class reverse
+{
+	int n,rem;
+	int rev=0;
+	public:
+		void in()
+		{
+			cout<<"ENTER A NUMBER FOR REVERSING: ";
+			cin>>n;
+		}
+		void solve()
+		{
+			while(n!=0)
+			{
+				rem=n%10;
+				rev=rev*10+rem;
+				n=n/10;
+			}
+			cout<<"REVERSE OF NUMBER IS: "<<rev<<endl;
+		}
+};
+int main()  
+{
+  reverse r;
+  r.in();   
+  r.solve();
+  return 0;  
+}
+.......................................................................................................................................................................................................................
+				        	13
+
+#include <iostream>
+using namespace std;
+class datatype
+{
+	public:
+		void type()
+		{
+		 cout << " The sizeof(char) is : " << sizeof(char) << " bytes"<<endl ;
+		 cout << " The sizeof(bool) is : " << sizeof(bool) << " bytes"<<endl;	
+   		cout << " The sizeof(long) is : " << sizeof(long) << " bytes "<<endl ;
+  		 cout << " The sizeof(long long) is : " << sizeof(long long) << " bytes"<<endl;
+   		cout << " The sizeof(float) is : " << sizeof(float) << " bytes \n" ;
+   		cout << " The sizeof(short) is : " << sizeof(short) << " bytes"<<endl ;
+  		 cout << " The sizeof(int) is : " << sizeof(int) << " bytes \n" ;
+   		cout << " The sizeof(double) is : " << sizeof(double) << " bytes \n";
+   		cout << " The sizeof(long double) is : " << sizeof(long double) << " bytes \n";
+		}
+};
+int main() 
+{
+	datatype d;
+	cout <<"Find Size of fundamental data types :"<<endl;
+    d.type();
+   return 0;
+}
+.....................................................................................................................................................................................................................
+						12
+
+#include<iostream>
+using namespace std;
+class Fibonacci
+{
+	int n,c;
+	int a=0,b=1;
+	public:
+		void in()
+		{
+			cout<<"ENTER NUMBER OF SERIES: ";
+			cin>>n;
+		}
+		void fib()
+		{
+			 cout << "Fibonacci Series is: " << endl;
+  			for (int i=a; i<=n; i++)
+  		{
+    		cout <<a<< "  ";
+    		c=a+b;
+    		a=b;
+    		b=c;
+  		}
+		}
+};
+int main()
+{
+  Fibonacci f;
+  f.in();
+  f.fib();
+  return 0;
+}
+......................................................................................................................................................................................................................
+					22
+
+#include <iostream>
+using namespace std;
+class triangle
+{
+	int a,b,c;
+	public:
+		void in()
+		{
+			cout<<"ENTER 1st angle of triangle: ";
+			cin>>a;
+			cout<<"ENTER 2nd angle of triangle: ";
+			cin>>b;
+		}
+		void thired()
+		{
+			c=a+b;
+			c=180-c;
+			cout<<"THE THIRED ANGLE IS: "<<c<<endl;
+		}
+};
+int main()
+{
+	triangle t;
+	t.in();
+	t.thired();
+}
+...........................................................................................................................................................................................................................
+						23
+
+#include<iostream>
+using namespace std;
+class distancee
+{
+	float km,miles;
+	public:
+		void in()
+		{
+			cout<<"ENTER the distance in kilometer PER hour: ";
+			cin>>km;
+		}
+		void cal()
+		{
+			cout << "Converting kilometers per hour to miles per hour :\n";
+			miles=(km*0.6213712);
+			cout<<"THE "<<km<<" KM IS "<<miles<<"IN MILES PER HOUR."<<endl;
+		}
+};
+int main()
+{
+	distancee d;
+	d.in();
+	d.cal();
+}
+..............................................................................................................................................................................................................
+					19
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float first,second,third;
+    float s,area;
+    cout<<"Enter size for First Side =";
+    cin>>first;
+    cout<<"Enter size for Second Side =";
+    cin>>second;
+    cout<<"Enter size for Third Side =";
+    cin>>third;
+    s = (first+second+third)/2;
+    area = sqrt(s*(s-first)*(s-second)*(s-third));
+    cout<<"Area of Triangle= "<<area<<endl;
+    return 0;
+}
+..................................................................................................................................................................................................................
+
+	
